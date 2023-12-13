@@ -29,6 +29,6 @@ bot.net.sendClick(true)
 sendNick is used for the bot to join the game, while sending the bot name data.
 
 4. leave()
-
+leave is used to leave the party.
 
 
