@@ -1,0 +1,16 @@
+{
+    "name": "brutal io bots or client",
+    "version": "1.0.0",
+    "description": "Bots or client for brutal.io adapted for node.js",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "node-fetch": "2.x",
+        "socks-proxy-agent": "5.0.0",
+        "ws": "^7.5.5"
+    },
+    "author": "electrdiode",
+    "license": "ISC"
+}
