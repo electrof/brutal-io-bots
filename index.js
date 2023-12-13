@@ -12,28 +12,15 @@ for(let i = 0; i < bots; i++) {
         let bot = new Brutal({
             address: server,
             nick: nickname,
-            autoplay: false     
+            autoplay: true    
         })
         
 
 
-setInterval(() => {
+setInterval(() => {   
     bot.net.sendInput(Math.random() * 6 , 1)
-
 }, 100);
-setInterval(() => {
-    bot.net.sendClick(true);
-    setTimeout(() => {
-        bot.net.sendClick(false);
-    }, 200);
-}, 100);
-
-setInterval(() => {
-    bot.net.leave();
-    bot.net.sendNick();
-}, 5000);
-
-  
+ 
     } catch (error) {
         console.error(`Error with Bot${i + 1}:`, error.message);
         
