@@ -1,7 +1,7 @@
 {
-    "name": "brutal io bots or client",
+    "name": "brutal io bots",
     "version": "1.0.0",
-    "description": "Bots or client for brutal.io adapted for node.js",
+    "description": "Bots for brutal.io node.js",
     "main": "index.js",
     "scripts": {
         "start": "node index.js"
