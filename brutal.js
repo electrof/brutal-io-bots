@@ -23,7 +23,7 @@ function loadProxies(filePath) {
 
 const proxies = loadProxies('./proxies.txt');
 
-console.log("Brutal.io Bots v1.0 - made by @electrdiode")
+console.log("Brutal.io Bots v1.0 - made by @electrdiode - https://github.com/electrof/brutal-io-bots")
 console.log("Starting bots...")
 
 function randomProperty(obj) {
@@ -276,7 +276,7 @@ sendNick: (nick = this.nick) => {
                 this.wasSuccessfullyConnected = false;
 
                 this.ws.onopen = () => {
-                    this.wasSuccessfullyConnected = true; // Establece la bandera cuando el bot se conecta exitosamente
+                    this.wasSuccessfullyConnected = true; 
                     connectedBots++;
                     console.log(`Connected bots: ${connectedBots}`);
                 
@@ -286,7 +286,7 @@ sendNick: (nick = this.nick) => {
                 };
                 
                 this.ws.onclose = () => {
-                    if (this.wasSuccessfullyConnected) { // Solo decrementa si se había establecido una conexión exitosa
+                    if (this.wasSuccessfullyConnected) {
                         connectedBots--;
                         console.log(`Connected bots: ${connectedBots}`);
                     }
@@ -296,13 +296,10 @@ sendNick: (nick = this.nick) => {
                     }
                 };
                 
-
-    // No modificamos este, lo dejamos como está
     this.ws.onmessage = this.net.onMessage;
                 this.ws.onmessage = this.net.onMessage;
                 this.ws.onerror = (error) => {
-        //            console.error("WebSocket error:", error.message);
-                    // Continúa con otro proxy u otra acción si es necesario
+        //            console.error("WebSocket error:", error.message);                   
                 };
                 
             },
