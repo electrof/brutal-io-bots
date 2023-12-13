@@ -1,2 +1,2 @@
-##Bots for brutal.io
+#Bots for brutal.io
 
