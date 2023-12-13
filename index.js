@@ -1,7 +1,7 @@
-const Brutal = require('./brutal/brutal');
+const Brutal = require('./brutal');
 var bots = 730;
 var server = "wss://158.69.123.15:9096";
-var nickname = ".";
+var nickname = "Brutal.io bots";
 
 
 
